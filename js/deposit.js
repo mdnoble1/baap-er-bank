@@ -1,10 +1,21 @@
 document.getElementById('button-deposit').addEventListener('click' , function(event){
-    
+
     // deposit input 
 
     const depositField = document.getElementById('deposit-field');
     const newDepositAmountString = depositField.value;
     const newDepositAmount = parseFloat(newDepositAmountString);
+    
+    // clear input field 
+
+    depositField.value = '';
+
+    // validation 
+
+    if( isNaN(newDepositAmount)){
+        alert('Please Type A Number')
+        return;
+    }
 
     // deposit box 
 
@@ -28,7 +39,4 @@ document.getElementById('button-deposit').addEventListener('click' , function(ev
     const newBalance = oldBalanceAmount + newDepositAmount;
     balanceField.innerText = newBalance;
 
-    // clear input field 
-
-    depositField.value = '';
 })
