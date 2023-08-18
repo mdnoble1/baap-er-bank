@@ -3,23 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baap Er Bank</title>
+    <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="images/2.png" type="image/x-icon">
 </head>
 <body class="bg-teal-100">
     <header class="mt-20 text-center">
         <h1 class="font-medium text-6xl ">Welcome To <span class="font-bold text-violet-600">Baap Er Bank </span> !!!</h1>
     </header>
     <main>
-        <section class="container mx-auto mt-16 bg-sky-300 rounded-xl px-10 py-20">
-            <h1 class="font-medium text-3xl mb-6">Please Login</h1>
+        <section class="container mx-auto mt-16 bg-sky-300 rounded-xl p-20 flex justify-between items-center">
+            <div class="flex-1">
+                <h1 class="font-medium text-3xl mb-6">Please Login</h1>
             <div>
-                <input id="user-email" class="w-2/3 block rounded-md px-2 py-1 mb-2" type="email" placeholder="Type Your Email">
-                <input id="user-password" class="w-2/3 block rounded-md px-2 py-1 mb-6" type="password" placeholder="Type Your Password">
+                <input id="user-email" class="w-3/4 block rounded-md px-2 py-1 mb-2" type="email" placeholder="Type Your Email">
+                <input id="user-password" class="w-3/4 block rounded-md px-2 py-1 mb-6" type="password" placeholder="Type Your Password">
             </div>
             <button id="button-submit" class="font-semibold text-lg text-white bg-amber-400 px-6 py-2 rounded-md hover:bg-sky-700">Submit</button>
+            </div>
+            <div>
+                <img class="max-w-xs" src="images/1.png" alt="">
+            </div>
         </section>
     </main>
+    <footer class="mt-20">
+        <p class="font-semibold text-lg text-center">All Rights Reserved By &copyDear_Pita</p>
+    </footer>
     <script src="js/login.js"></script>
 </body>
 </html>
