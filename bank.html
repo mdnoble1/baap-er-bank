@@ -16,18 +16,19 @@
             <div class="grid grid-cols-3 gap-10 text-white">
                 <div class="bg-green-400 rounded-lg py-12 px-16">
                     <h4 class="font-semibold text-3xl mb-2">Deposit</h4>
-                    <h2 class="font-semibold text-5xl">$00</h2>
+                    <h2 class="font-semibold text-5xl">$<span id="deposit-amount">00</span></h2>
                 </div>
                 <div class="bg-yellow-400 rounded-lg py-12 px-16">
                     <h4 class="font-semibold text-3xl mb-2">Withdraw</h4>
-                    <h2 class="font-semibold text-5xl">$00</h2>
+                    <h2 class="font-semibold text-5xl">$<span id="withdraw-amount">00</span></h2>
                 </div>
                 <div class="bg-violet-400 rounded-lg py-12 px-16">
                     <h4 class="font-semibold text-3xl mb-2">Balance</h4>
-                    <h2 class="font-semibold text-5xl">$1240</h2>
+                    <h2 class="font-semibold text-5xl">$<span id="balance-amount">1240</span></h2>
                 </div>
             </div>
         </section>
+        <!-- deposit and withdraw section  -->
         <section class="container mx-auto mt-16">
             <div class="grid grid-cols-2 gap-10">
                 <div class="bg-fuchsia-400 rounded-lg py-12 px-16">
@@ -47,5 +48,6 @@
               </div>
         </section>
     </main>
+    <script src="js/deposit.js"></script>
 </body>
 </html>
