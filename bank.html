@@ -6,11 +6,12 @@
     <title>Your Account</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-teal-100">
     <header class="mt-20 text-center">
         <h1 class="font-medium text-6xl ">Let's Get Some <span class="font-bold text-violet-600">Moooooooonney </span> !!!</h1>
     </header>
     <main>
+        <!-- status section  -->
         <section class="container mx-auto mt-16">
             <div class="grid grid-cols-3 gap-10 text-white">
                 <div class="bg-green-400 rounded-lg py-12 px-16">
@@ -26,6 +27,24 @@
                     <h2 class="font-semibold text-5xl">$1240</h2>
                 </div>
             </div>
+        </section>
+        <section class="container mx-auto mt-16">
+            <div class="grid grid-cols-2 gap-10">
+                <div class="bg-fuchsia-400 rounded-lg py-12 px-16">
+                    <h4 class="font-semibold text-3xl mb-8 text-white">Please Deposit</h4>
+                    <div>
+                        <input id="deposit-field" class="w-2/3 block rounded-md px-2 py-1 mb-4" type="text" placeholder="$ Amount You Want To Deposit">
+                    </div>
+                    <button id="button-deposit" class="font-semibold text-lg text-white bg-amber-400 px-6 py-2 rounded-md hover:bg-sky-700">Deposit</button>
+                </div>
+                <div class="bg-sky-400 rounded-lg py-12 px-16">
+                    <h4 class="font-semibold text-3xl mb-8 text-white">Please Withdraw</h4>
+                    <div>
+                        <input id="withdraw-field" class="w-2/3 block rounded-md px-2 py-1 mb-4" type="text" placeholder="$ Amount You Want To Withdraw">
+                    </div>
+                    <button id="button-withdraw" class="font-semibold text-lg text-white bg-amber-400 px-6 py-2 rounded-md hover:bg-sky-700">Withdraw</button>
+                </div>
+              </div>
         </section>
     </main>
 </body>
